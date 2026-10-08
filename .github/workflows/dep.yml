@@ -1,0 +1,8 @@
+name: dep
+on: [push, workflow_dispatch]
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - run: echo hi
